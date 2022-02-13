@@ -1,4 +1,8 @@
-<input (input)="onSearch($event)" />
+<input
+  (input)="onSearch($event)"
+  class="search"
+  placeholder="type something for search"
+/>
 
 <div class="result">
   <div class="group" *ngFor="let group of result$ | async">

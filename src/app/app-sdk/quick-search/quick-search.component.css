@@ -1,10 +1,13 @@
 :host {
   display: inline-block;
 }
+.search:focus + .result {
+  display: block;
+}
 .result {
   padding: 8px;
   background-color: white;
-  display: block;
+  display: none;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 ul {
