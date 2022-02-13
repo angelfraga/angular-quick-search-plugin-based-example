@@ -16,6 +16,7 @@ import { QuickSearchService } from './quick-search/quick-search.service';
 @NgModule({
   imports: [CommonModule],
   declarations: [QuickSearchComponent],
+  exports: [QuickSearchComponent],
 })
 export class AppSdkModule {
   static forChild(
