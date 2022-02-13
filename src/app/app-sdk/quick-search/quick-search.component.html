@@ -1,0 +1,20 @@
+<input (input)="onSearch($event)" />
+
+<div class="result">
+  <div class="group" *ngFor="let group of result$ | async">
+    <h3>{{ group.key }}</h3>
+    <ul>
+      <li *ngIf="group.items.length === 0">
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </li>
+      <li *ngFor="let item of group.items" (click)="onSelect(group.key, item)">
+        {{ item.title }}
+      </li>
+    </ul>
+  </div>
+</div>

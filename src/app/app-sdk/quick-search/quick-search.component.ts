@@ -4,8 +4,8 @@ import { QuickSearchService } from './quick-search.service';
 
 @Component({
   selector: 'app-quick-search',
-  templateUrl: './quick-search.component.html',
-  styleUrls: ['./quick-search.component.css'],
+  templateUrl: 'quick-search.component.html',
+  styleUrls: ['quick-search.component.css'],
 })
 export class QuickSearchComponent {
   readonly groups = this.quickSearchService.groups$;
